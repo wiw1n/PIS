@@ -33,9 +33,7 @@ class Main extends CI_Controller {
 
 	public function IPAdressesAllocation()
 	{
-		// $this->User_model->forLoggedInOnly();
-
-		echo "Hello World!";
+		$this->User_model->forLoggedInOnly();
 
 		$this->load->view('template/header');
 		$this->load->view('IPAddresses');
